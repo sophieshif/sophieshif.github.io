@@ -1,0 +1,144 @@
+/*CSS document*/
+
+body {
+    background-color: #FFFBF7;
+}
+
+div.container {
+    max-width: 80em;
+    margin: 0 auto;
+}
+
+section {
+    max-width: 40em;
+    margin: 0 auto 3em;
+}
+
+a{
+    text-decoration: none;
+}
+
+figure {
+    margin: 0;
+    padding-left: 1em;
+    margin-bottom: 2em;
+}
+
+
+img {
+    width: 100%;
+    display: block;
+}
+
+h1 {
+    padding: 1.5rem 0rem 1.5rem 1rem;
+    width: 4em;
+    line-height: 80%  
+}
+
+h2 {
+    
+    font-family: pragmatapro-fraktur, serif;
+    font-weight: 700;
+    font-style: normal;
+    padding-left: 0.7em;
+    text-align: left;
+}
+
+h3{
+   font-family: pragmatapro-fraktur, serif;
+    font-weight: 500;
+    font-style: normal;
+    color:#454343;
+    padding-left: 0.8em;
+    font-size: 1.5em;
+}
+
+h3:hover {
+    color: #B9B1A6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul {
+    padding:0em 1em 1em 1em;
+
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    font-family: brother-1816, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.9em;
+    margin-right: 1em;
+}
+nav ul li a{
+    color:#454343;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #B9B1A6; 
+}
+
+p{
+    color: #1B1A1A;  
+	line-height: 160%; 
+	font-family: brother-1816, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    padding: 0rem 0rem 3rem 1rem;
+}
+
+figcaption{
+    font-family: brother-1816, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    padding-top: 0.5em;
+    color: #454343;
+}
+
+@media screen and (min-width: 60em){
+    div.container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 0 1em;
+    }
+    
+    header {
+        grid-column: 1/3;
+    } 
+    
+    main {
+        grid-column: 1/2;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 0 1em;
+    }
+    
+    section.mainstory {
+        grid-column: 2/4;
+        grid-row: 1/3;
+    }
+    
+    
+    aside{
+        grid-column: 2/3; 
+    }
+    
+    p{
+    padding: 0rem 0rem 1rem 1rem;
+    }
+    
+    section.second {
+        display: flex; 
+        
+    }
+    
+    
